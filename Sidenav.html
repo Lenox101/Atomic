@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Side Navigation Bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fyq8/1QzoT6Jv2uRpX4mtx+8djbJQ7E9weJQ==" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Style the sidebar */
+        .sidebar {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #f5f5f5;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+
+            /* Style the sidebar links */
+            .sidebar a {
+                padding: 10px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #000;
+                display: block;
+                transition: 0.3s;
+            }
+
+                /* Style the active link */
+                .sidebar a.active {
+                    background-color: #eaeaea;
+                }
+
+        /* Style the button that opens and closes the sidebar */
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+            .openbtn:hover {
+                background-color: #0062cc;
+            }
+
+        /* Style the content area */
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+                .sidebar a {
+                    font-size: 18px;
+                }
+        }
+    </style>
+</head>
+<body>
+    <!-- The sidebar -->
+    <div class="sidebar">
+        <a class="active" href="#">Account</a>
+        <a href="Myprofile.aspx">Profile</a>
+    </div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7JHA8PUPhT7xgTjBwnjZFgF/Gm1UFTJoWKDwJ+qnxl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7h"></script>
+</body>
+</html>

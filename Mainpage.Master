@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mainpage.master.cs" Inherits="atomic.Mainpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="masterstyles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+     
+    </asp:ContentPlaceHolder>
+</head>
+<body id="body">
+    <form id="form1" runat="server">
+        <div id="header" style="height: 109px; width: 1070px;">
+             <asp:Image ID="Image1" runat="server" Height="64px" Width="85px" ImageUrl="~/images/near1.jpg" />
+            <asp:Label ID="Label1" runat="server" Text="Use the Map button to Get your current location" CssClass="headerlabels"></asp:Label>
+            <br />
+            <br />
+             <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">
+                 <asp:ListItem Value="Boarding">Boarding</asp:ListItem>
+                 <asp:ListItem Value="Parking">Parking</asp:ListItem>
+             </asp:DropDownList>
+        </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+            </asp:ContentPlaceHolder>
+        <div id="footer">
+            Parking and Boarding System<br />&copy All Right Reserved.2023
+        </div>
+        
+    </form>
+</body>
+</html>
